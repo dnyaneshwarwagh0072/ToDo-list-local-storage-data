@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+
+}
+
+/*Utility class Css*/
+.container{
+    padding: 0px 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        padding: 0px 20px;
+    }
+}
+
+/*Section - 1 Css written here*/
+.heading{
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.input_field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.task_detail{
+    width: 36%;
+    height: 63px;
+    padding: 10px;
+    min-width: 280px;
+    border: 2px solid black;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#priority{
+    width: 22%;
+    height: 63px;
+    padding: 10px;
+    min-width: 135px;
+    border: 2px solid black;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+button{
+    width: 14%;
+    height: 63px;
+    padding: 10px;
+    min-width: 120px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.date{
+    width: 25%;
+    height: 63px;
+    padding: 10px;
+    min-width: 135px;
+    border: 2px solid black;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 920px){
+    .heading{
+        font-size: 32px;
+        margin: 20px 0px;
+    }
+    .task_detail{
+        width: 50%;
+    }
+    button{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 622px){
+    #priority{
+        width: 49.1%;
+        height: 43px;
+        font-size: 18px;
+    }
+    .task_detail{
+        width: 100%;
+        height: 43px;
+        font-size: 18px;
+    }
+    .date{
+        width: 49.1%;
+        height: 43px;
+        font-size: 18px;
+    }
+    button{
+        height: 43px;
+        font-size: 18px;
+    }
+
+}
+
+
+/*Section - 2 , 3 4 Css written here*/
+.heading_small{
+    font-size: 32px;
+    margin: 40px 0px;
+    font-weight: 600;
+}
+
+.Today_box_container1, .Today_box_container2, .Today_box_container3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box_body1, .box_body2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 15px;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.box_body2{
+    border: 2px solid black;
+}
+
+.box_body1{
+    background-color: black;
+    color: white;
+}
+
+.body_item1{
+    width: 300px;
+}
+
+.colored-image {
+    filter: hue-rotate(90deg); 
+}
+
+.complete_todo{
+    margin-bottom: 20px;
+}
+
+.body_item3{
+    width: 95px;
+}
+
+@media screen and (max-width: 622px){
+    .box_body1, .box_body2{
+        font-size: 18px;
+    }
+
+    .body_item1{
+        width: 100%;
+    }
+
+    .body_item3{
+        width: 80px;
+    }
+
+    .heading_small{
+        font-size: 24px;
+        margin: 40px 0px;
+        font-weight: 600;
+    }
+}
